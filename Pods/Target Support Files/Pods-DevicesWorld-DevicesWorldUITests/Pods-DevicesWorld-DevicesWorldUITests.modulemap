@@ -1,0 +1,6 @@
+framework module Pods_DevicesWorld_DevicesWorldUITests {
+  umbrella header "Pods-DevicesWorld-DevicesWorldUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
