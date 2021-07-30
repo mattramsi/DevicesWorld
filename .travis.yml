@@ -1,6 +1,5 @@
-osx_image: xcode10.2
+osx_image: xcode12.4
 language: swift
-os: osx
-xcode_project: DevicesWorld.xcodeproj
-xcode_scheme: DevicesWorld
-xcode_destination: platform=iOS Simulator,OS=12.2,name=iPhone 8
+
+script:
+  - xcodebuild -workspace DevicesWorld.xcworkspace -scheme DevicesWorld build test 

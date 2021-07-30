@@ -43,7 +43,7 @@ struct DeviceDetailView: View {
                 .background(Color.blue)
                 .cornerRadius(16)
             }.sheet(isPresented: $showingModalSheet) {
-//                UserDetailRouter.destinationForMoreInfoAction(user: viewModel.user)
+                DeviceDetailRouter.destinationForMoreInfoAction(device: viewModel.device)
             }.padding(.top, 20)
             
             Spacer()
@@ -77,7 +77,7 @@ final class DeviceDetailConfigurator {
 
 final class DeviceDetailRouter {
 
-//    public static func destinationForMoreInfoAction(device: Device) -> some View {
-//        return MoreInfoConfigurator.configureMoreInfoView(with: device)
-//    }
+    public static func destinationForMoreInfoAction(device: Device) -> some View {
+        return MoreInfoConfigurator.configureMoreInfoView(with: device)
+    }
 }
